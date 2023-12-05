@@ -1,0 +1,109 @@
+body {
+    font-family: 'Helvetica Neue';
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 800px) {
+    .digit {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .digit {
+        width: 75px;
+        height: 75px;
+    }
+    .text {
+        font-size: 20pt;
+    }
+    .title {
+        font-size: 30pt;
+    }
+    .box {
+        width: 100vw;
+        height: 100px;
+    }
+    .box p {
+        padding: 10px;
+    }
+    .spacer {
+        height: 100px;
+    }
+}
+
+.box p {
+    padding: 10px;
+}
+
+.box {
+    background: rgb(105, 105, 206);
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: 200px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.box.show {
+    background: rgb(105, 105, 206);
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: 200px;
+    opacity: 1;
+}
+
+
+/* Multiple elements can be looped over and animated as they enter the viewport. */
+.digit {
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    margin-left: 0px;
+    -webkit-transform: translateX(-40px);
+         -moz-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+             -o-transform: translateX(-40px);
+                    transform: translateX(-40px);
+    -webkit-transition: all 0.6s ease-out;
+         -moz-transition: all 0.6s ease-out;
+            -ms-transition: all 0.6s ease-out;
+             -o-transition: all 0.6s ease-out;
+                    transition: all 0.6s ease-out;
+}
+.digit.visible {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}
+.digit:nth-child(2) {
+    background-color: rgb(29, 29, 29);
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.digit:nth-child(3) {
+    background-color: rgb(69, 69, 69);
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.digit:nth-child(4) {
+    background-color: rgb(123, 123, 123);
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.digit:nth-child(5) {
+    background-color: rgb(172, 172, 172);
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-bottom: 200px;
+}
+
+.spacer {
+    height: 200px;
+}
+

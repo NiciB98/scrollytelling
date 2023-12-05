@@ -1,0 +1,564 @@
+body {
+    background-color: #61bebe;
+    font-family: "Jost";
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    margin: auto;
+    font-size: 16pt;
+    width: 600px;
+}
+
+/*Start Style Video*/
+
+
+.controls button {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.controls button:focus {
+    outline: none;
+}
+
+.controls i {
+    font-size: 18px;
+}
+/*End Style Video*/
+
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.title {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    background-color: #FFE347;
+}
+
+img {
+    width: 600px;
+}
+
+button:hover {
+    background-color: #3A3E3B
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+@media screen and (min-width: 800px) {
+
+    .player {
+        display: block;
+        margin: auto;
+        width: 60vw;
+        margin-bottom: 20vw;
+    }
+    
+    #sparkVideo {
+        margin: auto;
+        width: 60vw;
+    }
+
+    .progress {
+        z-index: 1;
+        height: 1rem;
+        background: #EF767A;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform-origin: 0 50%;
+        animation: scaleProgress auto linear, colorChange auto linear;
+        animation-timeline: scroll(root);
+      }
+      
+      @keyframes scaleProgress {
+        0% {
+          transform: scaleX(0);
+        }
+        100% {
+          transform: scaleX(1);
+        }
+      }
+      
+      @keyframes colorChange {
+        0% {
+          background-color: #1E555C;
+        }
+        50% {
+          background-color: #EDB183;
+        }
+        100% {
+          background-color: #F15152;
+        }
+      }
+    /*Auf Huawei Handys funktioniert der x-overflow nicht. Es konnte kein Text angezeigt werden.
+    auch nach Ausprobieren von;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        position: relative;
+        konnte das Problem nicht behoben werden.*/
+    
+
+    #gif {
+        margin-left: -130px;
+    }
+
+    .title {
+        width: 100%;
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .title h1 {
+        font-size: 35pt;
+        text-align: center;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+    }
+    
+    #start {
+        padding-top: 100px;
+        margin: auto;
+        width: 200px;
+    }
+    
+    #startbutton {
+        margin: auto;
+        width: 200px;
+        padding: 10px;
+        font-family: "Bebas Neue";
+        font-size: 20pt;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    img {
+        /* width: 100%; */
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .digit {
+        width: 150px;
+        height: 150px;
+    }
+
+    .digit:nth-child(2) {
+        background-color: rgb(29, 29, 29);
+        margin-top: 25px;
+        margin-left: 150px;
+    }
+    .digit:nth-child(3) {
+        background-color: rgb(69, 69, 69);
+        margin-top: 25px;
+        margin-left: 300px;
+    }
+    .digit:nth-child(4) {
+        background-color: rgb(123, 123, 123);
+        margin-top: 25px;
+        margin-left: 450px;
+    }
+    .digit:nth-child(5) {
+        background-color: rgb(167, 167, 167);
+        margin-top: 25px;
+        margin-left: 600px;
+        margin-bottom: 200px;
+    }
+
+    .arrow-up {
+        margin: auto;
+        width: 0px; 
+        height: 40px; 
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 40px solid black;
+      }
+    
+    #topButton {
+        display: block;
+        margin: auto;
+        border: none;
+        background: none;
+        margin-bottom: 75px;
+    }
+    
+    #toptext {
+        text-align: center;
+        font-size: 150%;
+    }
+    
+    .arrow-up:hover {
+        margin: auto;
+        height: 40px; 
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        cursor: pointer;
+        border-bottom: 40px solid white;
+    }
+    
+    #topButton:hover {
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 75px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .player {
+        display: block;
+        margin: auto;
+        width: 400px;
+        margin-bottom: 20vw;
+    }
+    
+    #sparkVideo {
+        margin: auto;
+        width: 400px;
+    }
+
+    .progress {
+        z-index: 1;
+        height: 0.5rem;
+        background: #EF767A;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform-origin: 0 50%;
+        animation: scaleProgress auto linear, colorChange auto linear;
+        animation-timeline: scroll(root);
+      }
+      
+      @keyframes scaleProgress {
+        0% {
+          transform: scaleX(0);
+        }
+        100% {
+          transform: scaleX(1);
+        }
+      }
+      
+      @keyframes colorChange {
+        0% {
+          background-color: #1E555C;
+        }
+        50% {
+          background-color: #EDB183;
+        }
+        100% {
+          background-color: #F15152;
+        }
+      }
+    /*Auf Huawei Handys funktioniert der x-overflow nicht. Es konnte kein Text angezeigt werden.
+    auch nach Ausprobieren von;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        position: relative;
+        konnte das Problem nicht behoben werden.*/
+    
+
+    .digit {
+        width: 75px;
+        height: 75px;
+    }
+
+    .digit:nth-child(2) {
+        background-color: rgb(29, 29, 29);
+        margin-top: 25px;
+        margin-left: 75px;
+    }
+    .digit:nth-child(3) {
+        background-color: rgb(69, 69, 69);
+        margin-top: 25px;
+        margin-left: 150px;
+    }
+    .digit:nth-child(4) {
+        background-color: rgb(123, 123, 123);
+        margin-top: 25px;
+        margin-left: 225px;
+    }
+    .digit:nth-child(5) {
+        background-color: rgb(167, 167, 167);
+        margin-top: 25px;
+        margin-left: 300px;
+        margin-bottom: 200px;
+    }
+
+    .arrow-up {
+        margin: auto;
+        width: 0px; 
+        height: 20px; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid black;
+      }
+
+    .box p {
+        padding-top: 50%;
+        text-align: center;
+        font-size: 50%;
+    }
+    
+    #topButton {
+        display: block;
+        margin: auto;
+        border: none;
+        background: none;
+        margin-bottom: 40px;
+    }
+    
+    #toptext {
+        text-align: center;
+        font-size: 100%;
+    }
+    
+    .arrow-up:hover {
+        margin: auto;
+        height: 20px; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        cursor: pointer;
+        border-bottom: 20px solid white;
+    }
+    
+    #topButton:hover {
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .text {
+        font-size: 11pt;
+        text-align: left;
+        width: 300px;
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .title h1 {
+        font-size: 25pt;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+    }
+    
+    #start {
+        padding-top: -1000px;
+        margin: auto;
+        width: 200px;
+    }
+    
+    #startbutton {
+        margin: auto;
+        width: 200px;
+        padding: 10px;
+        font-family: "Bebas Neue";
+        font-size: 20pt;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    
+    img {
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/*Alle Elemente mit dieser Klasse haben die opacity 0 und erscheinen mit einer Übergangszeit von 2 Sekunden.*/
+.scrollytext {
+    opacity: 0;
+    transition: all 1.5s;
+    transition-delay: 0.25s;
+    transition-timing-function: ease;
+    margin-left: 350px;
+}
+
+/*Sobald die Elemente mit class = 'scrolly' */
+.scrollytext.show {
+    opacity: 1;
+    margin-left: 0px;
+    padding:  25px;
+}
+
+.scrollyimg {
+    opacity: 0;
+    transition: all 1.5s;
+    transition-delay: 0.25s;
+    transition-timing-function: ease;
+    transform: translateX(-20%); /* Start position off the screen to the left */
+    margin: 25px 25px;
+}
+
+.scrollyimg.show {
+    opacity: 1;
+    transform: translateX(0); /* Final position at 0 horizontal translation */
+}
+
+/*Grafiken/Gifs*/
+
+.grafiken {
+    margin: auto;
+    width: 100%;
+}
+
+/*Hintergrund vom body wechseln*/
+
+.color1 {
+    background-color: rgb(97, 190, 190);
+    z-index: 1;
+}
+
+.color2 {
+    background-color: #FFE347; /* Define your desired color here */
+    transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    transform: scaleY(0.8);
+}
+
+.color2.show {
+    transform: scaleY(1);
+}
+
+/*Linien svg*/
+.svggrafiken {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+
+#weiss {
+    z-index: 1;
+    display: block;
+    position: relative;
+    transform: translateX(0px); /* Adjust the horizontal offset (x-axis) as needed */
+    transition: transform 0.5s; /* Transition for smooth animation */
+}
+
+
+/*Scrollmagic begins...*/
+
+
+#box1 {
+    background: rgb(105, 105, 206);
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: 200px;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 25px;
+}
+
+#box1.show {
+    background: rgb(105, 105, 206);
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: 200px;
+    opacity: 1;
+}
+
+#box2 {
+    background: rgb(105, 105, 206);
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: 200px;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 25px;
+}
+
+#box2.show {
+    background: rgb(105, 105, 206);
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: 200px;
+    opacity: 1;
+}
+
+.box p{
+    text-align: center;
+    padding-top: 5vw;
+}
+
+/* Multiple elements can be looped over and animated as they enter the viewport. */
+
+.digit {
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    margin-left: 0px;
+    border-radius: 2vw;
+    -webkit-transform: translateX(-40px);
+         -moz-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+             -o-transform: translateX(-40px);
+                    transform: translateX(-40px);
+    -webkit-transition: all 0.6s ease-out;
+         -moz-transition: all 0.6s ease-out;
+            -ms-transition: all 0.6s ease-out;
+             -o-transition: all 0.6s ease-out;
+                    transition: all 0.6s ease-out;
+}
+.digit.visible {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}
+
+
+#topButtonContainer {
+    background-color: #FFE347;
+    height: 175px;
+}
