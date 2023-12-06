@@ -334,6 +334,7 @@ a:hover {
     #toptext {
         text-align: center;
         font-size: 100%;
+        margin-top: 40px;
     }
     
     .arrow-up:hover {
@@ -612,4 +613,8 @@ a:hover {
     text-decoration: none;
     padding: 5px 0;
 }
+
+.no-scroll {
+    overflow: hidden;
+  }
 /*Pop-up Window End*/

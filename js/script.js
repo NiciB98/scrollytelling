@@ -267,7 +267,7 @@ let sceneVideo = new ScrollMagic.Scene({
 //Video Animation to play if video is in viewport
 sceneVideo.on('enter', function() {
   spark.play();
-  console.log('play');
+  console.log('play')
 });
 
 sceneVideo.on('leave', function() {
@@ -280,15 +280,18 @@ window.addEventListener("load", function(){
   setTimeout(
       function open(event){
           document.querySelector(".popup").style.display = "block";
+          document.body.classList.add('no-scroll'); //no scroll hinzufügen
       },
       500
   )
 });
 document.querySelector("#close").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none";
+  document.body.classList.remove('no-scroll'); // weg mit no scroll
 });
 
 document.querySelector("#okay").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none";
+  document.body.classList.remove('no-scroll'); // weg mit no scroll
 });
 //Popup Ende
