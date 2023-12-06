@@ -201,11 +201,14 @@ a:hover {
         border: none;
         background: none;
         margin-bottom: 75px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     
     #toptext {
         text-align: center;
         font-size: 150%;
+        margin-top: 40px;
     }
     
     .arrow-up:hover {
@@ -221,6 +224,8 @@ a:hover {
         cursor: pointer;
         margin: auto;
         margin-bottom: 75px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -271,7 +276,7 @@ a:hover {
           background-color: #F15152;
         }
       }
-    /*Auf Huawei Handys funktioniert der x-overflow nicht. Es konnte kein Text angezeigt werden.
+    /*Auf Huawei Handys funktionierte der x-overflow teils nicht. Es konnte kein Text angezeigt werden.
     auch nach Ausprobieren von;
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
@@ -280,6 +285,11 @@ a:hover {
         position: relative;
         konnte das Problem nicht behoben werden.*/
     
+    .stair {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .digit {
         width: 75px;
@@ -329,12 +339,14 @@ a:hover {
         border: none;
         background: none;
         margin-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     #toptext {
         text-align: center;
         font-size: 100%;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     
     .arrow-up:hover {
@@ -350,6 +362,8 @@ a:hover {
         cursor: pointer;
         margin: auto;
         margin-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .text {
