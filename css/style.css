@@ -54,6 +54,12 @@ a:hover {
 }
 
 @media screen and (min-width: 800px) {
+    .linien {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+
 
     .player {
         display: block;
