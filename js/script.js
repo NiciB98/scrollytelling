@@ -191,6 +191,16 @@ window.onload = function() {
     var volumeBar = document.getElementById('volume-bar');
     var fullScreenButton = document.getElementById('full-screen');
 
+    video.addEventListener('click', function() {
+      if (video.paused == true) {
+          video.play();
+          playButton.innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+          video.pause();
+          playButton.innerHTML = '<i class="fas fa-play"></i>';
+      }
+  });
+
     playButton.addEventListener('click', function() {
         if (video.paused == true) {
             video.play();
