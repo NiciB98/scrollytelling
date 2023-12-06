@@ -275,7 +275,7 @@ sceneVideo.on('leave', function() {
   console.log('pause');
 });
 
-
+//Popup Start
 window.addEventListener("load", function(){
   setTimeout(
       function open(event){
@@ -287,3 +287,8 @@ window.addEventListener("load", function(){
 document.querySelector("#close").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none";
 });
+
+document.querySelector("#okay").addEventListener("click", function(){
+  document.querySelector(".popup").style.display = "none";
+});
+//Popup Ende
