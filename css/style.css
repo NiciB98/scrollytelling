@@ -177,6 +177,7 @@ a:hover {
         background-color: whitesmoke;
         transition: all 0.3s ease-in-out;
     }
+
     #backbutton a:hover {
         color: black;
     }
@@ -456,6 +457,36 @@ a:hover {
         border: none;
         border-radius: 5px;
         
+    }
+
+    #backbutton {
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 50px;
+        font-size: 14pt;
+        font-family: "Bebas Neue";
+        cursor: pointer;
+        background-color: whitesmoke;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #backbutton a:hover {
+        color: black;
+    }
+
+    #backbutton:hover {
+        margin: auto;
+        width: 100px;
+        height: 50px;
+        padding: 5px;
+        left: -20px; /* Adjust this line */
+        background-color: whitesmoke;
+        font-size: 14pt;
+        font-family: "Bebas Neue";
+        cursor: pointer;
+        border: none;
+        border-radius: 50px;
     }
     
     img {
