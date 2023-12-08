@@ -5,6 +5,15 @@ body {
     margin: 0;
 }
 
+#back {
+    margin: auto;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 2.5vw;
+    z-index: 1;
+}
+
 .text {
     margin: auto;
     font-size: 16pt;
@@ -144,7 +153,8 @@ a:hover {
         margin: auto;
         width: 200px;
     }
-    
+
+
     #startbutton {
         margin: auto;
         width: 200px;
@@ -154,6 +164,35 @@ a:hover {
         cursor: pointer;
         border: none;
         border-radius: 10px;
+    }
+
+    #backbutton {
+        height: 70px;
+        width: 70px;
+        border: none;
+        border-radius: 70px;
+        font-size: 20pt;
+        font-family: "Bebas Neue";
+        cursor: pointer;
+        background-color: whitesmoke;
+        transition: all 0.3s ease-in-out;
+    }
+    #backbutton a:hover {
+        color: black;
+    }
+
+    #backbutton:hover {
+        margin: auto;
+        width: 150px;
+        height: 70px;
+        padding: 10px;
+        left: -20px; /* Adjust this line */
+        background-color: whitesmoke;
+        font-size: 20pt;
+        font-family: "Bebas Neue";
+        cursor: pointer;
+        border: none;
+        border-radius: 70px;
     }
     
     img {
@@ -404,14 +443,18 @@ a:hover {
     }
     
     #startbutton {
+        border-radius: 5px;
+    }
+
+    #startbutton:hover {
         margin: auto;
-        width: 200px;
-        padding: 10px;
+        width: 100px;
+        padding: 5px;
         font-family: "Bebas Neue";
-        font-size: 20pt;
+        font-size: 10pt;
         cursor: pointer;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
         
     }
     
