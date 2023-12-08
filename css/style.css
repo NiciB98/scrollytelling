@@ -156,7 +156,16 @@ a:hover {
 
 
     #startbutton {
-        margin: auto;
+        width: 200px;
+        padding: 10px;
+        font-family: "Bebas Neue";
+        font-size: 20pt;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #startbutton:hover {
         width: 200px;
         padding: 10px;
         font-family: "Bebas Neue";
@@ -440,10 +449,18 @@ a:hover {
     #start {
         padding-top: -1000px;
         margin: auto;
-        width: 200px;
+        width: 100px;
     }
     
     #startbutton {
+        border-radius: 5px;
+        margin: auto;
+        width: 100px;
+        padding: 5px;
+        font-family: "Bebas Neue";
+        font-size: 10pt;
+        cursor: pointer;
+        border: none;
         border-radius: 5px;
     }
 
@@ -456,7 +473,6 @@ a:hover {
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        
     }
 
     #backbutton {
